@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
     tools:context=".SellActivity">
 
@@ -32,10 +35,222 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sell Activity"
-        android:textSize="30sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Chọn hình" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingVertical="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_add_img_placeholder" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Thông tin chi tiết" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <!--Danh muc-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Danh mục"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector" />
+
+
+                <!--Loai san pham-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Loại sản phẩm"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector" />
+
+                <!--Ten san pham-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Tên sản phẩm"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector" />
+
+                <!--Mo ta san pham-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Mô tả"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector"
+                    android:maxLines="5" />
+
+                <!--Nha cung cap-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Nhà cung cấp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector"
+                    android:maxLines="5" />
+
+                <!--Thuong hieu-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Thuơng hiệu"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector"
+                    android:maxLines="5" />
+
+                <!--Xuat su-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Xuất sứ"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector"
+                    android:maxLines="5" />
+
+                <!--Kich thuoc-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Kích thuớc"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector"
+                    android:maxLines="5" />
+
+                <!--Gia ban-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Giá bán"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.mob403_asm.utils.ClearableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edt_bg_selector"
+                    android:maxLines="5" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="@drawable/button_sell_background"
+                    android:elevation="3dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Đăng bán"
+                    android:textColor="@color/colorWhite"
+                    tools:ignore="UnusedAttribute" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

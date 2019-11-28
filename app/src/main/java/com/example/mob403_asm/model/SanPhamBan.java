@@ -4,44 +4,32 @@ import java.util.Date;
 
 public class SanPhamBan {
     private String _id;
-    private String tenSp, mieuTa, id_nguoiBan;
+    private String tenSp, moTaSp, nhaCungCap, thuongHieu, xuatSu, kichThuoc, loaiSp, danhMuc, ngayDang;
     private double giaBan;
-    private String ngayDang;
-    private byte[] hinhSp;
-    private String danhMuc;
+    private String[] hinhSp;
     private int dangBan; //trạng thái nhà đang bán hay đã bán, 1 là đang bán, 0 là đã bán
 
     public SanPhamBan() {
     }
 
-    public SanPhamBan(String _id, String tenSp, String mieuTa, String id_nguoiBan, double giaBan, String ngayDang, byte[] hinhSp, int dangBan) {
-        this._id = _id;
-        this.tenSp = tenSp;
-        this.mieuTa = mieuTa;
-        this.id_nguoiBan = id_nguoiBan;
-        this.giaBan = giaBan;
-        this.ngayDang = ngayDang;
-        this.hinhSp = hinhSp;
-        this.dangBan = dangBan;
-    }
-
-    public SanPhamBan(String tenSp, String mieuTa, double giaBan, String ngayDang, int dangBan) {
-        this.tenSp = tenSp;
-        this.mieuTa = mieuTa;
-        this.giaBan = giaBan;
-        this.ngayDang = ngayDang;
-        this.dangBan = dangBan;
-    }
-
-    public SanPhamBan(String tenSp, String mieuTa, double giaBan) {
-        this.tenSp = tenSp;
-        this.mieuTa = mieuTa;
-        this.giaBan = giaBan;
-    }
-
     public SanPhamBan(String tenSp, double giaBan) {
         this.tenSp = tenSp;
         this.giaBan = giaBan;
+    }
+
+    public SanPhamBan(String tenSp, String moTaSp, String nhaCungCap, String thuongHieu, String xuatSu, String kichThuoc, String loaiSp, String danhMuc, String ngayDang, double giaBan, String[] hinhSp, int dangBan) {
+        this.tenSp = tenSp;
+        this.moTaSp = moTaSp;
+        this.nhaCungCap = nhaCungCap;
+        this.thuongHieu = thuongHieu;
+        this.xuatSu = xuatSu;
+        this.kichThuoc = kichThuoc;
+        this.loaiSp = loaiSp;
+        this.danhMuc = danhMuc;
+        this.ngayDang = ngayDang;
+        this.giaBan = giaBan;
+        this.hinhSp = hinhSp;
+        this.dangBan = dangBan;
     }
 
     public String get_id() {
@@ -60,20 +48,60 @@ public class SanPhamBan {
         this.tenSp = tenSp;
     }
 
-    public String getMieuTa() {
-        return mieuTa;
+    public String getMoTaSp() {
+        return moTaSp;
     }
 
-    public void setMieuTa(String mieuTa) {
-        this.mieuTa = mieuTa;
+    public void setMoTaSp(String moTaSp) {
+        this.moTaSp = moTaSp;
     }
 
-    public String getId_nguoiBan() {
-        return id_nguoiBan;
+    public String getNhaCungCap() {
+        return nhaCungCap;
     }
 
-    public void setId_nguoiBan(String id_nguoiBan) {
-        this.id_nguoiBan = id_nguoiBan;
+    public void setNhaCungCap(String nhaCungCap) {
+        this.nhaCungCap = nhaCungCap;
+    }
+
+    public String getThuongHieu() {
+        return thuongHieu;
+    }
+
+    public void setThuongHieu(String thuongHieu) {
+        this.thuongHieu = thuongHieu;
+    }
+
+    public String getXuatSu() {
+        return xuatSu;
+    }
+
+    public void setXuatSu(String xuatSu) {
+        this.xuatSu = xuatSu;
+    }
+
+    public String getKichThuoc() {
+        return kichThuoc;
+    }
+
+    public void setKichThuoc(String kichThuoc) {
+        this.kichThuoc = kichThuoc;
+    }
+
+    public String getLoaiSp() {
+        return loaiSp;
+    }
+
+    public void setLoaiSp(String loaiSp) {
+        this.loaiSp = loaiSp;
+    }
+
+    public String getDanhMuc() {
+        return danhMuc;
+    }
+
+    public void setDanhMuc(String danhMuc) {
+        this.danhMuc = danhMuc;
     }
 
     public double getGiaBan() {
@@ -84,19 +112,11 @@ public class SanPhamBan {
         this.giaBan = giaBan;
     }
 
-    public String getNgayDang() {
-        return ngayDang;
-    }
-
-    public void setNgayDang(String ngayDang) {
-        this.ngayDang = ngayDang;
-    }
-
-    public byte[] getHinhSp() {
+    public String[] getHinhSp() {
         return hinhSp;
     }
 
-    public void setHinhSp(byte[] hinhSp) {
+    public void setHinhSp(String[] hinhSp) {
         this.hinhSp = hinhSp;
     }
 
@@ -106,5 +126,13 @@ public class SanPhamBan {
 
     public void setDangBan(int dangBan) {
         this.dangBan = dangBan;
+    }
+
+    public String getNgayDang() {
+        return ngayDang;
+    }
+
+    public void setNgayDang(String ngayDang) {
+        this.ngayDang = ngayDang;
     }
 }

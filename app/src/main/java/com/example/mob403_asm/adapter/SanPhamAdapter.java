@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.mob403_asm.R;
 import com.example.mob403_asm.model.SanPhamBan;
 
@@ -70,6 +71,15 @@ public class SanPhamAdapter extends BaseAdapter {
 
         holder.tvTenSp.setText(sanPhamBan.getTenSp());
         holder.tvGiaBan.setText(giaFormatted);
+
+        String[] urls = sanPhamBan.getHinhSp();
+        if (urls != null) {
+            Glide.with(context.getApplicationContext())
+                    .load(urls[0])
+                    .into(holder.ivSanPham);
+        } else {
+            // do nothing
+        }
 
         return view;
     }

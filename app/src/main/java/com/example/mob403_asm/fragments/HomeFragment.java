@@ -51,5 +51,22 @@ public class HomeFragment extends Fragment {
         listSanPham.add(new SanPhamBan("iPhone 11 Pro Max", 33000000));
         listSanPham.add(new SanPhamBan("Macbook Pro 16", 61000000));
         listSanPham.add(new SanPhamBan("iPad Pro 2019", 18000000));
+        listSanPham.add(new SanPhamBan(
+                "Apple Watch Series 5 GPS",
+                "Đồng hồ thông minh Apple Watch thế hệ thứ 5 với GPS",
+                "FPT trading",
+                "Apple",
+                "Mỹ",
+                "40 x 34 x 10.7 mm",
+                "Đồng hồ thông minh",
+                "Đồ công nghệ",
+                "28/11/2019",
+                11690000,
+                new String[]{
+                        "https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/10/15/637067332334331058_series-5-vien-nhom-44-caosu-den-dd.png",
+                        "https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/10/15/637067336891983180_series-5-vien-nhom-44-caosu-hong-dd.png",
+                        "https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/10/15/637067317313557277_series-5-vien-nhom-caosu-trang-dd.png"
+                },
+                1));
     }
 }
