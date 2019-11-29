@@ -1,7 +1,5 @@
 package com.example.mob403_asm.model;
 
-import java.util.Date;
-
 public class SanPhamBan {
     private String _id;
     private String tenSp, moTaSp, nhaCungCap, thuongHieu, xuatSu, kichThuoc, loaiSp, danhMuc, ngayDang;
